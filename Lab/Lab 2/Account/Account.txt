@@ -1,0 +1,36 @@
+package acount;
+
+public class Account {
+
+    private int id;
+    private int balance;
+    public Account(int i){
+        balance=i;
+    }
+    public int withdraw(int amount) {
+        int amnt = amount;
+        balance = balance - amnt;
+        return balance;
+    }
+
+    public int diposit(int amount) {
+        int dpst = amount;
+        balance = balance + dpst;
+        return balance;
+    }
+
+    public void setId(int i) {
+        id = i;
+    }
+
+    public int getId() {
+        return id;
+    }
+    public void setBalance(int a){
+        balance=a;
+    }
+    public int getBalance(){
+        return balance;
+    }
+
+}

@@ -1,0 +1,25 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package labtwo;
+
+/**
+ *
+ * @author Administrator
+ */
+public class LabTwo {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Student obj=new Student(450);
+        System.out.println(obj.getID());
+        obj.display();
+        obj.setID(652);
+        obj.display();
+    }
+    
+}

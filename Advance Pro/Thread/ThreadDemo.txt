@@ -1,0 +1,40 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package bj;
+
+public class ThreadDemo
+{
+            public static void main(String[] args)
+            {
+                T1 obj1 = new T1();
+                T2 obj2 = new T2(); 
+                T3 obj3=new T3();
+                Thread t1= new Thread(obj1);
+                Thread t2=new Thread (obj2);
+                Thread t3=new Thread (obj3);
+                t1.start();
+                try
+                {
+                    t1.join();
+                }
+                catch(Exception e)
+                {
+                    
+                }
+                t2.start();
+               try
+                 
+                {
+                    t2.join();
+                }
+                catch(Exception e)
+                {
+                    
+                }
+                t3.start();
+            }
+    
+}

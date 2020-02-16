@@ -1,0 +1,30 @@
+package acount;
+
+import java.util.Scanner;
+
+public class Operation {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter balance ");
+        int balance = input.nextInt();
+        Account act = new Account(balance);
+        System.out.println("Enter your choice");
+        int choice = input.nextInt();
+        System.out.println("Enter ammount ");
+        int amount = input.nextInt();
+        switch (choice) {
+            case 1:
+                System.out.println(act.withdraw(amount));
+                break;
+            case 2:
+                System.out.println(act.diposit(amount));
+                break;
+            default:
+                System.out.println("Error....");
+            
+        }
+        
+    }
+    
+}

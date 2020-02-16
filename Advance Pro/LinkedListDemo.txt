@@ -1,0 +1,34 @@
+
+package linkedlistdemo;
+import java.util.*;
+
+
+public class LinkedListDemo {
+   public static void main(String[]args){
+      LinkedList<String> list=new LinkedList<>();
+       list.add("A");
+       list.add("B");
+       list.add("C");
+       list.add("D");
+       list.add("E");
+       list.add("F");
+       list.add("G");
+       list.add("H");
+       list.add("I");
+       list.add("J");
+       for(String f: list){
+           System.out.println(f);
+       }
+       list.add(3, "S");
+       System.out.println("Updated List: "+list);
+       list.remove(4);
+       list.remove(5);
+       System.out.println("After Removing: "+list);
+       list.remove(1);
+       list.set(1, "X");
+       
+       System.out.println("Final: "+list);
+       
+   }
+   
+}
